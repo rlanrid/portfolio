@@ -4,11 +4,11 @@
     color: var(--main-font);
 }
 
-.nav {
+.header__wrap {
     height: 100px;
 }
 
-.nav__wrap {
+.header__container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -16,12 +16,13 @@
     align-items: center;
 }
 
-.nav__logo {
+.header__logo {
     height: 100%;
     display: flex;
     align-items: center;
     margin-left: 18px;
 }
+
 .logo__text {
     color: var(--main-font);
     font-size: 18px;
@@ -32,26 +33,27 @@
     display: none;
 }
 
-.nav__menu > ul {
+.nav > ul {
     height: 100%;
 }
-.nav__menu li {
+
+.nav li {
     display: inline-block;
     margin-right: 45px;
 }
 
-.nav__menu li a {
+.nav li a {
     font-family: var(--main-abel);
     font-size: 18px;
     opacity: 0.5;
     transition: opacity 0.3s;
 }
 
-.nav__menu li a:hover {
+.nav li a:hover {
     opacity: 1;
 }
 
-.nav__line {
+.header__line {
     width: 100%;
     height: 1px;
     background-color: var(--main-line);
@@ -60,11 +62,89 @@
 /* 햄버거 메뉴 */
 
 .nav__mobile__menu {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    margin-right: 18px;
+    display: none;
 }
 
 .nav__mobile__menu span {
     display: block;
+    width: 30px;
+    height: 1px;
+    background-color: var(--main-font);
+    opacity: 0.5;
+    position: relative;
+}
+
+.nav__mobile__menu span::before {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: var(--main-font);
+    position: absolute;
+    right: 0;
+    top: 8px;
+    transition: width 0.3s;
+}
+
+.nav__mobile__menu span::after {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: var(--main-font);
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    transition: width 0.3s;
+}
+
+@media(max-width: 780px){
+    .nav {
+        display: none;
+    }
+    .nav.show {
+        display: block;
+    }
+
+    .nav.show ul {
+        display: block;
+        position: absolute;
+        height: auto;
+        right: 0;
+        top: 100px;
+        background-color: var(--primary-color);
+        z-index: 10;
+        min-width: 120px;
+        padding: 10px 0;
+    }
+    .nav.show li {
+        display: block;
+        text-align: right;
+        margin-right: 18px;
+    }
+    .nav__mobile__menu {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width: 480px){
+    .header__container {
+        padding: 0 18px;
+    }
+    .logo__img > img {
+        display: none;
+    }
+    .logo__text {
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .nav__mobile__menu {
+        margin-right: 0;
+    }
+    .header__logo {
+        margin-left: 0;
+    }
 }

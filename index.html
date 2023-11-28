@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,35 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header id="header">
-        <nav class="nav">
-            <div class="nav__wrap">
-                <div class="nav__logo">
+        <div class="header__wrap">
+            <div class="header__container">
+                <div class="header__logo">
                     <div class="logo__img"><img src="assets/img/logo__img.png" alt="로고이미지"></div>
                     <div class="logo__text">Frontend Developer - W<em>oojoo</em>K<em>im</em></div>
                 </div>
-                <div class="nav__menu">
+                <nav class="nav">
                     <ul>
                         <li><a href="#">About me</a></li>
                         <li><a href="#">Work</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
-                <div class="nav__mobile__menu">
+                </nav>
+                <div 
+                    class="nav__mobile__menu"
+                    id="navToggle"
+                    aria-controls="primary-menu"
+                    aria-expanded="false"
+                    role="button"
+                    onclick="toggleMenu()"
+                >
                     <span></span>
                 </div>
             </div>
-            <div class="nav__line"></div>
-        </nav>
+            <div class="header__line"></div>
+        </div>
     </header>
     <!-- //header -->
 
@@ -37,6 +46,10 @@
             <h2 class="blind">메인사진 섹션</h2>
             <div class="pic__container">
                 <img src="assets/img/hero.png" alt="메인사진">
+            </div>
+            <div class="scroll__box">
+                <div class="text__box">Scroll down</div>
+                <p>To Discover</p>
             </div>
         </section>
     </main>
@@ -48,6 +61,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.122.0/examples/js/controls/OrbitControls.js"></script>
     <script src="script/main.js" type="module"></script>
+    <script src="script/nav.js"></script>
     <script id="vertexShader" type="x-shader/x-vertex">
         uniform float iter;
         uniform vec2 currentMouse;
@@ -108,4 +122,5 @@
 
 
 </body>
+
 </html>
