@@ -1,0 +1,7 @@
+body {
+    background-color: var(--primary-color);
+}
+
+.text__box {
+    color: var(--main-font);
+}
