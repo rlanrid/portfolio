@@ -136,3 +136,9 @@ select {
     text-indent: -9999px;
     white-space: nowrap;
 }
+
+
+/* i태그 */
+i {
+    font: inherit;
+}
