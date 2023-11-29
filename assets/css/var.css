@@ -2,6 +2,7 @@
     --main-gmarket: "GmarketSans";
     --main-abel: "Abel";
     --main-ibm: "IBM Plex Mono"; /* monospace; */
+    --main-chosun: "ChosunNm"; /* chosun명조 */
 
     --primary-color: #070707;
     --main-font: #E6E6E6;
@@ -13,6 +14,11 @@
     --black: #000;
     --white: #fff;
     --red: #f00;
+
+    --port1: #F2FF26;  
+    --port2: #CFF07C;  
+    --port3: #CAD5D1;  
+    --port4: #D94041;  
 
     --black100: #383838;
     --black200: #59595A;

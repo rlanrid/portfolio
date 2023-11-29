@@ -22,8 +22,14 @@ body {
 
 .container {
     height: 100vh;
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.containerH {
+    height: auto;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .ver__wrap {
@@ -44,4 +50,20 @@ body {
     height: 100%;
     background-color: var(--dark-grey);
     padding-right: 0;
+}
+
+@media(max-width:1280px) {
+    .container, .containerH {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+
+}
+
+@media(max-width:780px) {
+    .container, .containerH{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
 }

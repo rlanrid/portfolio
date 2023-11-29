@@ -1,0 +1,77 @@
+#port {
+    position: relative;
+}
+
+.port__title {
+    position: relative;
+    background-color: var(--primary-color);
+    padding: 12px 0;
+    border-top: 1px solid var(--dark-grey);
+    border-bottom: 1px solid var(--main-line);
+    margin-bottom: 40px;
+}
+
+.port__title > img {
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 27%;
+}
+
+.port__title h2 {
+    font-family: var(--main-gmarket);
+    color: var(--main-font);
+    font-size: 36px;
+    margin-left: 30px;
+}
+
+.port__wrap {
+    width: 100%;
+}
+
+.port__item {
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.port__cont .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary-color);
+    font-size: 14px;
+    color: var(--dark-grey);
+    font-family: var(--main-ibm);
+}
+
+.port__cont .info2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 36px;
+    padding: 12px 0;
+    font-family: var(--main-gmarket);
+    color: var(--primary-color);
+}
+
+.port__cont .link {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.port__item.num1 {
+    background-color: var(--port1);
+}
+.port__item.num2 {
+    background-color: var(--port2);
+}
+.port__item.num3 {
+    background-color: var(--port3);
+}
+.port__item.num4 {
+    background-color: var(--port4);
+}
