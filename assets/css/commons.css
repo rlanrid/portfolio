@@ -27,7 +27,6 @@ body {
 }
 
 .containerH {
-    height: auto;
     padding-left: 120px;
     padding-right: 120px;
 }
@@ -52,8 +51,35 @@ body {
     padding-right: 0;
 }
 
+/* sectionTitle */
+.secT {
+    position: relative;
+    background-color: var(--primary-color);
+    padding: 12px 0;
+    border-top: 1px solid var(--dark-grey);
+    border-bottom: 1px solid var(--main-line);
+}
+
+.secT > img {
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 27%;
+}
+
+.secT h2 {
+    font-family: var(--main-gmarket);
+    color: var(--main-font);
+    font-size: 36px;
+    margin-left: 30px;
+}
+
+
+/* 반응형 */
 @media(max-width:1280px) {
-    .container, .containerH {
+    .container, 
+    .containerH {
         padding-left: 85px;
         padding-right: 85px;
     }
@@ -65,5 +91,4 @@ body {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
 }

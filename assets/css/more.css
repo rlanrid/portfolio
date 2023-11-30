@@ -1,0 +1,45 @@
+.more__item {
+    padding: 27px 0;
+    color: var(--main-font);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 2px solid var(--line-grey);
+}
+
+.more__item .title {
+    width: 37.5%;
+    font-size: 20px;
+    font-family: var(--main-gmarket);
+}
+
+.more__item .type {
+    width: 12.5%;
+    font-size: 12px;
+    color: var(--mid-grey);
+}
+
+.more__item .stack {
+    width: 37.5%;
+    font-size: 12px;
+    color: var(--mid-grey);
+    text-align: right;
+}
+
+.more__item .link {
+    width: 12.5%;
+}
+
+.more__item .link a {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.more__item .link a img {
+    width: 14px;
+}
+
+@media(max-width:780px){
+    
+}
