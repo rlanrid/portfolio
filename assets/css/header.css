@@ -1,16 +1,27 @@
 /* header */
 #header {
-    /* position: fixed;
+    position: fixed;
     left: 0;
     top: 0;
-    z-index: 1000; */
+    z-index: 18;
     width: 100%;
-    background-color: var(--primary-color);
     color: var(--main-font);
 }
 
 .header__wrap {
+    width: 100%;
     height: 100px;
+    position: relative;
+}
+.header__wrap::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(25px);
+    z-index: -1;
 }
 
 .header__container {

@@ -1,5 +1,9 @@
 body {
     background-color: var(--primary-color);
+    padding-top: 100px;
+}
+
+main {
 }
 
 .text__box {
@@ -90,5 +94,17 @@ body {
     .container, .containerH{
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media(max-width:480px){
+    .secT h2 {
+        font-size: 6vw;
+        margin-left: 24px;
+    }
+    .secT > img {
+        width: 20px;
+        height: 26px;
+        top: 24%;
     }
 }

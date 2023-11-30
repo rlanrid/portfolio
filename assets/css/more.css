@@ -5,6 +5,16 @@
     align-items: center;
     justify-content: left;
     border-bottom: 2px solid var(--line-grey);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.more__item:hover {
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+.more__item:hover .title {
+    color: var(--primary-color);
 }
 
 .more__item .title {
@@ -40,6 +50,28 @@
     width: 14px;
 }
 
-@media(max-width:780px){
-    
+@media(max-width:780px) {
+    .more__item {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .more__item .title {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .more__item .type {
+        width: 50%;
+    }
+
+    .more__item .stack {
+        width: 50%;
+    }
+
+    .more__item .link {
+        position: absolute;
+        right: 0;
+        top: 32px;
+    }
 }
